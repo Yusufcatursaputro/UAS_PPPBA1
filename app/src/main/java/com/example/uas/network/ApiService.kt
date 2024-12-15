@@ -13,6 +13,6 @@ interface ApiService {
     fun getAllUsers(): Call<List<Data>>
     @POST("FRviA/anime")
     fun addAnime(@Body anime: Data): Call<Data>
-    @DELETE("anime/{id}")
+    @DELETE("FRviA/anime/{id}")
     fun deleteAnime(@Path("id") id: String): Call<Void>
 }
